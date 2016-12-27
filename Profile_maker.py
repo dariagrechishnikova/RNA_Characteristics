@@ -47,6 +47,7 @@ class Parser:
     def is_id_line(self, line):
         return line[0] == self.mark_
 
+    @staticmethod
     def extract_id(line):
         return line[1:].strip()
 
