@@ -73,7 +73,5 @@ class Parser:
 
 parser = Parser()
 
-parser.mark_ = '+'
-
 for seq in parser.parse():
     seq.print_seq()
