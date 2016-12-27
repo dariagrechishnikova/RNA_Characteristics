@@ -47,7 +47,7 @@ class Parser:
     def is_id_line(self, line):
         return line[0] == self.mark_
 
-    def extract_id(self, line):
+    def extract_id(line):
         return line[1:].strip()
 
     def parse(self):
@@ -59,7 +59,7 @@ class Parser:
         cur_id = ''
         for line in seq_file:
             if self.is_id_line(line):
-                cur_id = self.extract_id(line)
+                cur_id = Parser.extract_id(line)
                 #print "found id", cur_id
                 continue
 
