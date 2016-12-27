@@ -15,7 +15,7 @@ def get_nucleotide_pairs():
 #print get_nucleotide_pairs()
 
 def get_dinucl_dict ():
-    path = "C:\Users\Daria\Documents\PHD\RNA_characterisation\diprodb2.txt"
+    path = 'diprodb2.txt'
     tab = np.loadtxt(path, delimiter = '\t', skiprows = 1)
     tab_reshaped = zip(*tab)
     dinucl = get_nucleotide_pairs()
@@ -41,7 +41,7 @@ class Sequence:
         print self.sequence_
 
 class Parser:
-    path_ = 'C:\\Users\\Daria\\Documents\\PHD\\RNA_characterisation\\test_rna_seq.txt'
+    path_ = 'test_rna_seq.txt'
     mark_ = '>'
 
     def is_id_line(self, line):
